@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+    <LangaugeDefault>vi-VN</LangaugeDefault>
+    <PageSize>20</PageSize>
+    
+    <SMTPServer>mail.thebooking.vn</SMTPServer>
+    <SendFromMail>no-reply@thebooking.vn</SendFromMail>
+    <ReceiveMail>cs@thebooking.vn</ReceiveMail>
+    <SendMailUsername>no-reply@thebooking.vn</SendMailUsername>
+    <SendMailPass>123456</SendMailPass>
+    
+    <TongDaiHotLine>+848 62555657</TongDaiHotLine>
+    <EmailHotLine>cs@thebooking.vn</EmailHotLine>
+    
+    <merchantCode>SPATHEBOOKINGVN</merchantCode>
+	<bankCode>123PVTB</bankCode>
+	<passcode>SPATHEBOOKINGVNxHHs5JShyA</passcode>
+    
+    <LinkYoutube>https://www.youtube.com/embed/NClL1y9OmKg?feature=player_detailpage</LinkYoutube>
+	
+    <PayOnlineCancelURL>successpay123</PayOnlineCancelURL>
+    <PayOnlineRedirectURL>successpay123</PayOnlineRedirectURL>
+    <PayOnlineErrorURL>successpay123</PayOnlineErrorURL>
+
+	<catelogyTotalSpaperPage>10</catelogyTotalSpaperPage>
+	<catelogyTotalProductperPage>4</catelogyTotalProductperPage>
+    
+    <TimeStepForProduct>30</TimeStepForProduct> 
+	<LimitRecordProductIndex>8</LimitRecordProductIndex>
+	
+	<tbdiscountNotTrue>Mã giảm giá bạn vừa nhập chưa hợp lệ.</tbdiscountNotTrue>
+	<tbdiscountNotUse>Mã giảm giá bạn vừa nhập chưa hợp lệ. Lưu ý một số mã giảm giá chỉ áp dụng cho khách hàng mới. Thebooking.vn sẽ từ chối đơn hàng nếu bạn không phải là khách hàng mới.</tbdiscountNotUse>
+	
+	<notecheck2>Lưu ý: Quý khách vui lòng đọc kỹ điều khoản thanh toán và điều kiện huỷ đặt chỗ tại Thebooking.vn</notecheck2>
+    
+    <SMSMsgClientVi>Quý khách đã đặt chỗ thành công với mã [bookingid] tai Thebooking.vn!</SMSMsgClientVi>
+    <SMSMsgClientEn>You have booked successfully with Thebooking.vn, your book-id is [bookingid] ! </SMSMsgClientEn>
+    
+    <SMSMsgSpaVi>Spa [SpaID] đã được đặt chỗ thành công với mã [bookingid] tại hệ thống Thebooking.vn!</SMSMsgSpaVi>
+    <SMSMsgSpaEn>Spa ID [SpaID] have been booked successfully via Thebooking.vn, book-id is [bookingid] ! </SMSMsgSpaEn>
+	
+	<leftlimitpricebookathome>1000000</leftlimitpricebookathome>
+	
+	<conditionshowproductindex>2</conditionshowproductindex>
+	 
+	<!--so nay la gia tien thap nhat cua cart de ap dung diem-->
+	<MinPricePoint>200000</MinPricePoint>
+	<!--ghi chu khi book bang diem-->
+	<NoteBookByPoint>Lưu ý: Thanh toán bằng điểm chỉ áp dụng cho các dịch vụ không khuyến mãi và phải thanh toán bằng tiền ít nhất là 200.000 VNĐ.</NoteBookByPoint>
+	
+	<!-- spa management-->
+	<RecordOnePageListHoinhom>10</RecordOnePageListHoinhom> <!--total record on one page for list doi nhom-->
+	<RecordOnePageListSpauserModal>10</RecordOnePageListSpauserModal> <!--total record on one page for list doi nhom-->
+	<RecordOnePageListComment>10</RecordOnePageListComment> <!--total record on one page for list doi nhom-->
+	<!-- end spa management-->
+</settings>
