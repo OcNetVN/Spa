@@ -14,6 +14,9 @@ class Index extends CI_Controller
        }
        public function index(){
            $lang = "vi-VN";
+           if(isset($_GET['language'])){
+               $_SESSION['Lang'] = $_GET['language'];
+           }
            if(isset($_SESSION['Lang']))
            {
               $lang = $_SESSION['Lang'];
@@ -22,6 +25,7 @@ class Index extends CI_Controller
            {
                $_SESSION['Lang']=$this->m_mail->getSetting("LangaugeDefault");
            }
+
            
             $res['listpro_limit4'] = $this->m_index->listpro_limit4();
             $res['loaispcon'] = $this->m_index->layloaiconsp();

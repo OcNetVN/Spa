@@ -49,8 +49,8 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'spabooking_admin';
-$db['default']['password'] = '123456789';
+$db['default']['username'] = 'root';
+$db['default']['password'] = '';
 $db['default']['database'] = 'spabooking_dev';
 
 /*$db['default']['hostname'] = 'localhost';
@@ -72,10 +72,10 @@ $db['default']['dbdriver'] = 'mysqli';
 
 
 $db['thebooking']['hostname'] = 'localhost';
-$db['thebooking']['username'] = 'spabooking_admin';
+$db['thebooking']['username'] = 'root';
 //$db['thebooking']['password'] = '1Pas(!92sdfsG&57#sajk674';
 //$db['thebooking']['database'] = 'spabooking_pro';
-$db['thebooking']['password'] = '123456789';
+$db['thebooking']['password'] = '';
 $db['thebooking']['database'] = 'spabooking_thebookingdev';
 $db['thebooking']['dbdriver'] = 'mysqli';
 $db['thebooking']['dbprefix'] = '';

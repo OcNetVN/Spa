@@ -16,7 +16,9 @@
                                                  echo "<li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"". $LstModule[$i]->url ."\">" . $LstModule[$i]->Description . "</a></li>";
                                              }
                                          ?>
-                                      </ul>                    
+                                      </ul> 
+
+                                                         
                                </li>
                                <li class="DaLogin col-md-10" >
                                     <a href="javascript:void(0);">Xin chào <span id="spanUIDLogBanner" style="font-weight: bold;">
@@ -88,10 +90,11 @@
                                 </li>
                                 
                                   <li class="dropdown menu-flag">                          
-                                      <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin"><img src="<?php echo base_url('resources/front/images/flag-vn.png'); ?>" width="27" height="18" alt="Tiếng Việt" /> <span class="caret"></span></a>
+                                      <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">Ngôn ngữ <span class="caret"></span></a>
                                       <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><img src="<?php echo base_url('resources/front/images/flag-en.png'); ?>" width="27" height="18" alt="Tiếng Việt" /></a></li>
-                                      </ul>                    
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo base_url('index?language=vi-VN'); ?>"><img src="<?php echo base_url('resources/front/images/flag-vn.png'); ?>" width="27" height="18" alt="Tiếng Việt" /></a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo base_url('index?language=en-US'); ?>"><img src="<?php echo base_url('resources/front/images/flag-en.png'); ?>" width="27" height="18" alt="Tiếng Anh" /></a></li>
+                                      </ul>                   
                                   </li>
                                   <li class="dropdown menu-flag menu-currency">                          
                                       <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">VND <span class="caret"></span></a>
@@ -101,6 +104,10 @@
                                   </li>
                               </ul>
                         </div>
+
+
+
+
 
 
 

@@ -38,6 +38,7 @@
 |
 */
 
+//$route['gio-hang/thong-tin-gio-hang'] = 'Giohang/thongtingiohang';
 $route['default_controller'] = "index";
 $route['404_override'] = '';
 
