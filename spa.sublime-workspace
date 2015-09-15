@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"js",
+				"JSON"
+			],
+			[
+				"txt",
+				"txtSpaName"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"pas",
+				"password"
+			],
+			[
 				"spa",
 				"spaman"
 			],
@@ -39,62 +55,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "/C/xampp/htdocs/account/application/models/m_spa.php",
-			"settings":
-			{
-				"buffer_size": 425,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/xampp/htdocs/account/application/controllers/login.php",
-			"settings":
-			{
-				"buffer_size": 7783,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/xampp/htdocs/account/application/views/vi-VN/index.php",
-			"settings":
-			{
-				"buffer_size": 48574,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/xampp/htdocs/account/application/controllers/spaman/home_controller.php",
-			"settings":
-			{
-				"buffer_size": 24110,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/xampp/htdocs/account/application/views/spamanagement/spa_info_view.php",
-			"settings":
-			{
-				"buffer_size": 11039,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "application/models/spamanagement/m_common.php",
-			"settings":
-			{
-				"buffer_size": 8754,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/xampp/htdocs/account/application/views/spamanagement/common/footer_view.php",
-			"settings":
-			{
-				"buffer_size": 2781,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -133,28 +93,67 @@
 	},
 	"expanded_folders":
 	[
-		"/C/xampp/htdocs/account",
-		"/C/xampp/htdocs/account/application",
-		"/C/xampp/htdocs/account/application/controllers",
-		"/C/xampp/htdocs/account/application/views",
-		"/C/xampp/htdocs/account/application/views/spamanagement",
-		"/C/xampp/htdocs/account/application/views/vi-VN",
-		"/C/xampp/htdocs/account/resources"
+		"/C/xampp/htdocs/account"
 	],
 	"file_history":
 	[
-		"/C/xampp/htdocs/account/application/controllers/login.php",
-		"/C/xampp/htdocs/account/application/models/spamanagement/m_spa_user.php",
-		"/C/xampp/htdocs/account/application/models/spamanagement/m_spa_info.php",
 		"/C/xampp/htdocs/account/application/models/spamanagement/m_common.php",
-		"/C/xampp/htdocs/account/application/views/spamanagement/js/js_spa_info_view.php",
+		"/C/xampp/htdocs/account/resources/spamanagement/js/common/common_function.js",
+		"/C/xampp/htdocs/account/application/views/vi-VN/spamanagement/spa_info_view.php",
+		"/C/xampp/htdocs/account/application/views/vi-VN/spamanagement/js/js_spa_info_view.php",
+		"/C/xampp/htdocs/account/resources/spamanagement/js/spa_info.js",
+		"/C/xampp/htdocs/account/application/models/spamanagement/m_spa_info.php",
+		"/C/xampp/htdocs/account/application/controllers/spaman/home_controller.php",
+		"/C/xampp/htdocs/account/application/controllers/useredit.php",
+		"/C/xampp/htdocs/account/application/views/vi-VN/spamanagement/spa_policy_view.php",
+		"/C/xampp/htdocs/account/application/models/m_mail.php",
+		"/C/xampp/htdocs/account/resources/ckeditor/ckeditor.js",
+		"/C/xampp/htdocs/account/application/libraries/PHPMailer/class.smtp.php",
+		"/C/xampp/htdocs/spa/resources/ckeditor/ckeditor.js",
+		"/C/xampp/htdocs/account/application/controllers/register.php",
+		"/C/xampp/htdocs/account/application/views/vi-VN/spamanagement/common/head_view.php",
+		"/C/xampp/htdocs/account/application/views/vi-VN/spamanagement/spa_report_view.php",
+		"/C/xampp/htdocs/spa/application/views/vi-VN/booking.php",
+		"/C/xampp/htdocs/account/application/views/vi-VN/spamanagement/spa_revenue_view.php",
+		"/C/xampp/htdocs/account/application/views/vi-VN/login.php",
+		"/C/xampp/htdocs/account/application/controllers/login.php",
+		"/C/xampp/htdocs/account/application/views/vi-VN/spamanagement/js/js_spa_policy_view.php",
+		"/C/xampp/htdocs/account/resources/spamanagement/js/spa_policy.js",
+		"/C/xampp/htdocs/account/application/views/vi-VN/spamanagement/spa_hour_view.php",
+		"/C/xampp/htdocs/account/application/views/vi-VN/admin/products/v_products.php",
+		"/C/xampp/htdocs/account/application/views/vi-VN/spamanagement/js/js_spa_hour_view.php",
+		"/C/xampp/htdocs/account/application/views/vi-VN/admin/report/v_report.php",
+		"/C/xampp/htdocs/account/application/views/vi-VN/admin/advertising/v_advertising.php",
+		"/C/xampp/htdocs/account/application/views/vi-VN/admin/policy/v_chinhsach.php",
+		"/C/xampp/htdocs/account/application/views/vi-VN/admin/Revenue/v_doanhthu.php",
+		"/C/xampp/htdocs/account/resources/spamanagement/css/bootstrap.min.css",
+		"/C/xampp/htdocs/account/resources/css/style.css",
+		"/C/xampp/htdocs/account/application/views/vi-VN/spamanagement/common/left_view.php",
+		"/C/xampp/htdocs/account/application/views/spamanagement/spa_info_view.php",
 		"/C/xampp/htdocs/account/application/config/routes.php",
+		"/C/xampp/htdocs/account/application/controllers/admin/goldhour.php",
+		"/C/xampp/htdocs/account/application/views/vi-VN/admin/price/v_price.php",
+		"/C/xampp/htdocs/account/application/views/vi-VN/admin/products/ViewGoldHour.php",
+		"/C/xampp/htdocs/account/application/views/spamanagement/common/footer_view.php",
+		"/C/xampp/htdocs/account/application/views/spamanagement/common/head_view.php",
+		"/C/xampp/htdocs/account/application/views/spamanagement/js/js_spa_info_view.php",
+		"/C/xampp/htdocs/account/application/views/spamanagement/js/js_spa_policy_view.php",
+		"/C/xampp/htdocs/account/application/views/vi-VN/admin/policy/chinhsach.php",
+		"/C/xampp/htdocs/account/application/views/vi-VN/admin/Revenue/v_doanhthu",
+		"/C/xampp/htdocs/account/application/views/vi-VN/admin/products/v_package.php",
 		"/C/xampp/htdocs/account/application/views/spamanagement/common/left_view.php",
+		"/C/xampp/htdocs/account/resources/css/reset.css",
+		"/C/xampp/htdocs/spa/application/views/en-US/account/resources/css/style.css",
+		"/C/xampp/htdocs/account/application/views/vi-VN/spamanagement/common/footer_view.php",
+		"/C/xampp/htdocs/account/application/models/m_spa.php",
+		"/C/xampp/htdocs/spa/application/models/spamanagement/m_common.php",
+		"/C/xampp/htdocs/account/application/views/login.php",
+		"/C/xampp/htdocs/spa/application/views/en-US/account/assets_backup/bootstrap/js/bootstrap.js",
+		"/C/xampp/htdocs/spa/application/views/en-US/account/application/models/spamanagement/m_common.php",
+		"/C/xampp/htdocs/account/application/views/vi-VN/index.php",
+		"/C/xampp/htdocs/account/application/models/spamanagement/m_spa_user.php",
 		"/C/xampp/htdocs/account/application/views/vi-VN/header.php",
 		"/C/xampp/htdocs/account/application/views/vi-VN/spamanagement/common/header_view.php",
-		"/C/xampp/htdocs/account/application/views/spamanagement/spa_info_view.php",
-		"/C/xampp/htdocs/spa/application/models/spamanagement/m_common.php",
-		"/C/xampp/htdocs/account/application/models/m_spa.php",
 		"/C/xampp/htdocs/account/application/models/m_news.php",
 		"/C/xampp/htdocs/spa/application/models/admin/m_user.php",
 		"/C/xampp/htdocs/account/application/models/m_register.php",
@@ -163,17 +162,14 @@
 		"/C/xampp/htdocs/account/application/models/admin/m_user.php",
 		"/C/xampp/htdocs/spa/application/views/en-US/account/application/models/admin/m_user.php",
 		"/C/xampp/htdocs/CI_Tri/application/controllers/nguoi_dung.php",
-		"/C/xampp/htdocs/account/application/views/vi-VN/login.php",
 		"/C/xampp/htdocs/account/application/controllers/index.php",
 		"/C/xampp/htdocs/account/application/views/vi-VN/index1.php",
 		"/C/xampp/htdocs/account/application/controllers/indexuser.php",
-		"/C/xampp/htdocs/account/application/views/vi-VN/index.php",
 		"/C/xampp/htdocs/account/application/controllers/index.html",
 		"/C/xampp/htdocs/account/application/controllers/about.php",
 		"/C/xampp/htdocs/spa/application/views/vi-VN/footer.php",
 		"/C/xampp/htdocs/account/application/models/nguoi_dung/m_nguoi_dung_table",
 		"/C/xampp/htdocs/account/application/models/nguoi_dung/m_ nguoi_dung",
-		"/C/xampp/htdocs/account/application/controllers/spaman/home_controller.php",
 		"/C/xampp/htdocs/account/application/controllers/nguoi_dung.php",
 		"/C/xampp/htdocs/account/application/views/login",
 		"/C/xampp/htdocs/account/application/views/nguoi_dung/v_doc_dsnd",
@@ -182,14 +178,11 @@
 		"/C/xampp/htdocs/spa/system/core/Model.php",
 		"/C/xampp/htdocs/account/application/controllers/nguoi_dung",
 		"/C/xampp/htdocs/account/application/views/spamanagement/common/spa_policy",
-		"/C/xampp/htdocs/account/application/views/spamanagement/common/footer_view.php",
-		"/C/xampp/htdocs/account/application/views/spamanagement/common/head_view.php",
 		"/C/xampp/htdocs/account/application/views/spamanagement/common/header_view.php",
 		"/C/xampp/htdocs/account/application/config/autoload.php",
 		"/C/xampp/htdocs/account/application/config/config.php",
 		"/C/xampp/htdocs/account/application/config/profiler.php",
 		"/C/xampp/htdocs/spa/application/controllers/check123pay.php",
-		"/C/xampp/htdocs/spa/application/views/vi-VN/booking.php",
 		"/C/xampp/htdocs/spa/application/controllers/tuyendung.php",
 		"/C/xampp/htdocs/spa/application/controllers/indexuser.php",
 		"/C/xampp/htdocs/spa/application/views/vi-VN/check123pay.php",
@@ -221,12 +214,11 @@
 		"/C/xampp/htdocs/spa/application/views/vi-VN/register.php",
 		"/C/xampp/htdocs/spa/application/controllers/checkout1.php",
 		"/C/xampp/htdocs/spa/application/views/vi-VN/checkout1.php",
-		"/C/xampp/htdocs/spa/application/views/vi-VN/headersearch.php",
-		"/C/xampp/htdocs/spa/resources/ckeditor/ckeditor.js"
+		"/C/xampp/htdocs/spa/application/views/vi-VN/headersearch.php"
 	],
 	"find":
 	{
-		"height": 26.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -240,6 +232,89 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"btnreset_spainfo",
+			"btnsave_spainfo",
+			"btnsave_spainfo_step2",
+			"btnsave_spainfo_Complete",
+			"notifyemail1",
+			"checkemail",
+			"notifyspaname",
+			"spa_info",
+			"btnsave_spainfo",
+			"cập nhật",
+			"Ti?",
+			"thêm",
+			"report",
+			"dt",
+			"report",
+			"dt",
+			"report",
+			"dt",
+			"report",
+			"dt",
+			"report",
+			"dt",
+			"report",
+			"policy",
+			"report",
+			"dt",
+			"info",
+			"dt",
+			"policy",
+			"images/images.jpg",
+			"spa_info",
+			"spa_hour",
+			"hour",
+			"policy",
+			"report",
+			"chính sách",
+			"report",
+			"policy",
+			"info",
+			".navbar-form ",
+			"media",
+			"report",
+			"dt",
+			"report",
+			"dt",
+			"report",
+			"adver",
+			"report",
+			"notify",
+			"col-md-12 margin-bottom-15",
+			"gmap_canvas",
+			"col-md-5 margin-bottom-15",
+			"col-md-7 margin-bottom-15",
+			"col-md-7",
+			"gmap_canvas",
+			"col-md-7 margin-bottom-15",
+			"col-md-5 margin-bottom-15",
+			"divuploadimage",
+			"Số ĐT",
+			"Số điện thoại",
+			"col-md-7 margin-bottom-15",
+			"col-md-5 margin-bottom-15",
+			"policy",
+			"chính sách",
+			"dt",
+			"report",
+			"templatemo",
+			"templatemo-content",
+			"Spa booking nhập liệu",
+			"side",
+			"template",
+			"template\\",
+			"template",
+			"templatemo",
+			"templatemo-content",
+			"templatemo",
+			"templamo",
+			"menu",
+			"Simpla Admin logo",
+			"Quản lý dịch vụ SPA",
+			"Quản lý booking",
+			"body-wrapper",
+			"cập nhật",
 			"fcse",
 			"AccUser",
 			"AccUser\n",
@@ -285,225 +360,14 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/C/xampp/htdocs/account/application/models/m_spa.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 425,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								314,
-								314
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/C/xampp/htdocs/account/application/controllers/login.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7783,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6411,
-								6411
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2214.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/C/xampp/htdocs/account/application/views/vi-VN/index.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 48574,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": -0.0,
-						"translation.y": 2160.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/C/xampp/htdocs/account/application/controllers/spaman/home_controller.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 24110,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								24110,
-								24110
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 11393.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/C/xampp/htdocs/account/application/views/spamanagement/spa_info_view.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 11039,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1252,
-								1252
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "application/models/spamanagement/m_common.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 8754,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2383,
-								2383
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/C/xampp/htdocs/account/application/views/spamanagement/common/footer_view.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2781,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								712,
-								712
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 810.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 26.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -536,11 +400,15 @@
 	{
 		"height": 0.0
 	},
+	"output.unsaved_changes":
+	{
+		"height": 124.0
+	},
 	"pinned_build_system": "",
 	"project": "spa.sublime-project",
 	"replace":
 	{
-		"height": 48.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":
