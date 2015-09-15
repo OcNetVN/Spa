@@ -9,10 +9,13 @@ class Notify extends CI_Controller
             $this->load->model('admin/m_user');
             $this->load->model('m_index');
             $this->load->model('m_mail');
+            $this->load->helper('language_helper'); 
        }
        
        public function index()
        {
+             $lang = change_language();
+
 			if(isset($_REQUEST['mTransactionID']))
 			{
 				$mTransactionID = $_REQUEST['mTransactionID'];

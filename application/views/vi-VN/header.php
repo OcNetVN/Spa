@@ -1,109 +1,116 @@
 <div class="col-md-8 top-bar-left">
-                            <ul class="nav navbar-nav top-menu-left col-md-12">
-                            <?php
-                                 if(isset($_SESSION['AccUser']))
-                                    {
-                             ?>
-                             <li id="TabUserMenu" class="dropdown DaLogin" >                          
-                                      <a class="dropdown-toggle user-link" href="#" data-toggle="dropdown" id="navLogin"><div class="wrap-thumb small-avatar" style="background-image:url(<?php echo base_url('resources/front/images/avatar-female.png'); ?>)"></div> <span class="caret"></span></a>
-                                      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo base_url("indexuser"); ?>">Trang cá nhân</a></li>
-                                        <li role="presentation"><a class="disconnect" role="menuitem" tabindex="-1" href="javascript:void(0);" onclick="DoThoat();" >Thoát</a></li>
-                                        <?php
-                                            $LstModule = $_SESSION['AccUser']['CacModule'];
-                                             for($i=0;$i<count($LstModule);$i++)
-                                             {
-                                                 echo "<li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"". $LstModule[$i]->url ."\">" . $LstModule[$i]->Description . "</a></li>";
-                                             }
-                                         ?>
-                                      </ul> 
+    <ul class="nav navbar-nav top-menu-left col-md-12">
+    <?php
+         if(isset($_SESSION['AccUser']))
+            {
+     ?>
+     <li id="TabUserMenu" class="dropdown DaLogin" >                          
+              <a class="dropdown-toggle user-link" href="#" data-toggle="dropdown" id="navLogin"><div class="wrap-thumb small-avatar" style="background-image:url(<?php echo base_url('resources/front/images/avatar-female.png'); ?>)"></div> <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo base_url("indexuser"); ?>">Trang cá nhân</a></li>
+                <li role="presentation"><a class="disconnect" role="menuitem" tabindex="-1" href="javascript:void(0);" onclick="DoThoat();" >Thoát</a></li>
+                <?php
+                    $LstModule = $_SESSION['AccUser']['CacModule'];
+                     for($i=0;$i<count($LstModule);$i++)
+                     {
+                         echo "<li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"". $LstModule[$i]->url ."\">" . $LstModule[$i]->Description . "</a></li>";
+                     }
+                 ?>
+              </ul> 
 
-                                                         
-                               </li>
-                               <li class="DaLogin col-md-10" >
-                                    <a href="javascript:void(0);">Xin chào <span id="spanUIDLogBanner" style="font-weight: bold;">
-                                    <?php
-                                         echo $_SESSION['AccUser']['Object']->FullName;
-                                     ?>
-                                    </span>  !! 
-                                    Lần cuối bạn đăng nhập: <span id="spanLastLoginBanner" style="font-weight: bold;">
-                                    <?php
-                                         echo $_SESSION['AccUser']['User']->LastLogin;
-                                     ?>
-                                    </span> 
-                                    </a>
-                               </li> 
-                             <?php           
-                                    }
-                                 else
-                                    {
-                             ?>
-                                <li id="TabUserMenu" class="dropdown DaLogin" style="display: none;">                          
-                                      <a class="dropdown-toggle user-link" href="#" data-toggle="dropdown" id="navLogin"><div class="wrap-thumb small-avatar" style="background-image:url(<?php echo base_url('resources/front/images/avatar-female.png'); ?>)"></div> <span class="caret"></span></a>
-                                      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo base_url("indexuser"); ?>">Trang cá nhân</a></li>
-                                        <li role="presentation"><a class="disconnect" role="menuitem" tabindex="-1"  href="javascript:void(0);" onclick="DoThoat();" >Thoát</a></li>
-                                      </ul>                    
-                               </li>
-                               <li class="DaLogin" style="display: none;">
-                                    <a href="javascript:void(0);">Xin chào <span id="spanUIDLogBanner" style="font-weight: bold;"></span>  !! 
-                                    Lần cuối bạn đăng nhập: <span id="spanLastLoginBanner" style="font-weight: bold;"></span> 
-                                    </a>
-                               </li> 
-                               
-                               <li id="menuLogin" class="ChuaLogin">
-                                    <!--<button type="button" id="btnchualogin" data-toggle="modal" data-target="#loginModal">Đăng nhập</button> -->   
-                                    <a href="javascript:void(0)"><span id="btnchualogin" data-toggle="modal" data-target="#loginModal">Đăng nhập</span> </a>                                 
-                               </li>
-                               <li class="ChuaLogin">                          
-                                    <a href="javascript:void(0);" onclick="register();">Đăng ký thành viên</a>   
-                               </li>                                 
-                               <li class="ChuaLogin">
-                                    <a href="javascript:void(0);" onclick="registerspa();">Đăng ký dành cho Spa</a>
-                               </li>
-                               <?php                                    
-                                    }
-                                ?>
-                               
-                            </ul>
-                        </div>
-                        <div class="col-md-4 top-bar-right">
-                            <ul class="nav navbar-nav navbar-right top-menu-right">
-                                <li>                          
-                                      <a href="#" onClick="parent.location='<?php echo base_url("checkout1"); ?>'"><span class="glyphicon glyphicon-shopping-cart"></span> Giỏ Hàng <span id="spanCardTotalList" class="badge">
-                                      <?php
-                                           $arrCart = null;
-                                           if(isset($_SESSION['Cart']))
-                                           {
-                                               $arrCart = (array) $_SESSION['Cart'];
-                                           }
-                                           if($arrCart != null)
-                                           {
-                                               echo count($arrCart);
-                                           }
-                                           else
-                                           {
-                                               echo 0;
-                                           }
-                                       ?>
-                                      </span></a>                   
-                                </li>
-                                
-                                  <li class="dropdown menu-flag">                          
-                                      <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">Ngôn ngữ <span class="caret"></span></a>
-                                      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo base_url('index?language=vi-VN'); ?>"><img src="<?php echo base_url('resources/front/images/flag-vn.png'); ?>" width="27" height="18" alt="Tiếng Việt" /></a></li>
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo base_url('index?language=en-US'); ?>"><img src="<?php echo base_url('resources/front/images/flag-en.png'); ?>" width="27" height="18" alt="Tiếng Anh" /></a></li>
-                                      </ul>                   
-                                  </li>
-                                  <li class="dropdown menu-flag menu-currency">                          
-                                      <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">VND <span class="caret"></span></a>
-                                      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">USD</a></li>
-                                      </ul>                    
-                                  </li>
-                              </ul>
-                        </div>
+                                 
+       </li>
+       <li class="DaLogin col-md-10" >
+            <a href="javascript:void(0);">Xin chào <span id="spanUIDLogBanner" style="font-weight: bold;">
+            <?php
+                 echo $_SESSION['AccUser']['Object']->FullName;
+             ?>
+            </span>  !! 
+            Lần cuối bạn đăng nhập: <span id="spanLastLoginBanner" style="font-weight: bold;">
+            <?php
+                 echo $_SESSION['AccUser']['User']->LastLogin;
+             ?>
+            </span> 
+            </a>
+       </li> 
+     <?php           
+            }
+         else
+            {
+     ?>
+        <li id="TabUserMenu" class="dropdown DaLogin" style="display: none;">                          
+              <a class="dropdown-toggle user-link" href="#" data-toggle="dropdown" id="navLogin"><div class="wrap-thumb small-avatar" style="background-image:url(<?php echo base_url('resources/front/images/avatar-female.png'); ?>)"></div> <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo base_url("indexuser"); ?>">Trang cá nhân</a></li>
+                <li role="presentation"><a class="disconnect" role="menuitem" tabindex="-1"  href="javascript:void(0);" onclick="DoThoat();" >Thoát</a></li>
+              </ul>                    
+       </li>
+       <li class="DaLogin" style="display: none;">
+            <a href="javascript:void(0);">Xin chào <span id="spanUIDLogBanner" style="font-weight: bold;"></span>  !! 
+            Lần cuối bạn đăng nhập: <span id="spanLastLoginBanner" style="font-weight: bold;"></span> 
+            </a>
+       </li> 
+       
+       <li id="menuLogin" class="ChuaLogin">
+            <!--<button type="button" id="btnchualogin" data-toggle="modal" data-target="#loginModal">Đăng nhập</button> -->   
+            <a href="javascript:void(0)"><span id="btnchualogin" data-toggle="modal" data-target="#loginModal">Đăng nhập</span> </a>                                 
+       </li>
+       <li class="ChuaLogin">                          
+            <a href="javascript:void(0);" onclick="register();">Đăng ký thành viên</a>   
+       </li>                                 
+       <li class="ChuaLogin">
+            <a href="javascript:void(0);" onclick="registerspa();">Đăng ký dành cho Spa</a>
+       </li>
+       <?php                                    
+            }
+        ?>
+       
+    </ul>
+</div>
+<div class="col-md-4 top-bar-right">
+    <ul class="nav navbar-nav navbar-right top-menu-right">
+        <li>                          
+              <a href="#" onClick="parent.location='<?php echo base_url("checkout1"); ?>'"><span class="glyphicon glyphicon-shopping-cart"></span> Giỏ Hàng <span id="spanCardTotalList" class="badge">
+              <?php
+                   $arrCart = null;
+                   if(isset($_SESSION['Cart']))
+                   {
+                       $arrCart = (array) $_SESSION['Cart'];
+                   }
+                   if($arrCart != null)
+                   {
+                       echo count($arrCart);
+                   }
+                   else
+                   {
+                       echo 0;
+                   }
+               ?>
+              </span></a>                   
+        </li>
+        <?php
+        $arr_flag = array( 'Tiếng Việt' => 'vi-VN', 'Tiếng Anh' => 'en-US' );
+        // print_r($arr_flag['Tiếng Việt']);
+        ?>
+          <li class="dropdown menu-flag">                          
+              <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin"><img src="<?php echo base_url('resources/front/images/flag-'.$_SESSION['Lang'].'.png'); ?>" width="27" height="18" alt="Tiếng Việt" /> <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <?php foreach ($arr_flag as $key => $value) { 
+                          if($value!=$_SESSION['Lang']){
+                ?>
+                       <li role="presentation"><a role="menuitem" tabindex="-1" ><img src="<?php echo base_url('resources/front/images/flag-'.$value.'.png'); ?>" id="change_language" width="27" height="18" alt="<?php echo $key;?>" data="<?php echo $value;?>" /></a></li>
+                <?php } }?>
+
+              </ul>                   
+          </li>
+          <li class="dropdown menu-flag menu-currency">                          
+              <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">VND <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">USD</a></li>
+              </ul>                    
+          </li>
+      </ul>
+</div>
 
 
 
@@ -204,6 +211,28 @@
 </div>
 <!-- End Modal -->                       
 <script type="text/javascript">
+$(document).ready(function(){
+    $("#change_language").click(function(){
+        // alert("The paragraph was clicked.");
+        var data_lang = document.getElementById('change_language').getAttribute("data");
+        // console.log(data);
+        $.ajax({
+            type: "POST",
+            url: getUrspal() + "index/Change_Language",
+            dataType: "text",
+            data: {
+                language: data_lang
+            },
+            cache: false,
+            success: function (data) {
+              var str= window.location.href.toString() ;
+              parent.location=str;    
+            }
+        });
+        
+
+    });
+});
 function DoThoat()
 {
 
@@ -211,5 +240,7 @@ function DoThoat()
     parent.location=getUrspal() + "admin/user/logout";    
 
 }
+
+
 
 </script>

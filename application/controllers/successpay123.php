@@ -10,9 +10,11 @@ class Successpay123 extends CI_Controller
             $this->load->model('m_mail');
             $this->load->model('m_index');
             $this->db2 = $this->load->database('thebooking', TRUE);
+            $this->load->helper('language_helper'); 
        }
        
        public function index(){
+         $lang = change_language();
           $status = 0;
           if(isset($_GET['status']))
           {
@@ -25,11 +27,7 @@ class Successpay123 extends CI_Controller
                {
                     $data['MenuString'] = $this->m_index->getMenuStr();
                     $data['CommentString'] = $this->m_index->getCommentStr();
-                    $lang = "vi-VN";
-                     if(isset($_SESSION['Lang']))
-                          $lang = $_SESSION['Lang'];
-                      else
-                           $_SESSION['Lang']=$this->m_mail->getSetting("LangaugeDefault");
+                    
                     //nghia viet them theo ss cart moi
                     $this->load->view($lang.'/successpay123',$data);
                }

@@ -7,19 +7,12 @@ class Hiring extends CI_Controller
             parent::__construct();
             $this->load->model('m_category'); 
             $this->load->model('m_index');
-            $this->load->model('m_mail');        
+            $this->load->model('m_mail'); 
+            $this->load->helper('language_helper');        
        }
        public function index(){
-           $lang = "vi-VN";
-           if(isset($_SESSION['Lang']))
-           {
-              $lang = $_SESSION['Lang'];
-           }
-           else
-           {
-               $_SESSION['Lang']=$this->m_mail->getSetting("LangaugeDefault");
-               //$lang= 
-           }
+            $lang = change_language();
+            
             $res['listpro_limit4'] = $this->m_index->listpro_limit4();
             $res['loaispcon'] = $this->m_index->layloaiconsp();
             $res['MenuString'] = $this->m_index->getMenuStr();

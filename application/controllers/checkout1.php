@@ -9,9 +9,11 @@ class CheckOut1 extends CI_Controller
             $this->load->model('admin/m_user');
             $this->load->model('m_index');
             $this->db2 = $this->load->database('thebooking', TRUE);
+            $this->load->helper('language_helper'); 
        }
        
        public function index(){
+            $lang = change_language();
 			//nghia them session de lam cart
             /*$arr_pro1=array(
                                 array("proid"=>"0100010223000002","Qty"=>2,"Price"=>500000,"FromTime"=>'2014-12-11 01:04:32',"ToTime"=>'2014-12-11 02:04:32'),
@@ -85,16 +87,7 @@ class CheckOut1 extends CI_Controller
                 $_SESSION['check1']=$arr_session;
                 $res['list_info_session']=$arr_session;
                 //end nghia viet them theo ss cart moi
-                $lang = "vi-VN";
-               if(isset($_SESSION['Lang']))
-               {
-                  $lang = $_SESSION['Lang'];
-               }
-               else
-               {
-                   $_SESSION['Lang']=$this->m_mail->getSetting("LangaugeDefault");
-                   //$lang= 
-               }
+               
                 $this->load->view($lang.'/checkout1',$res);
            }
            else

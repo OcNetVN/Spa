@@ -8,10 +8,12 @@ class Spadetail extends CI_Controller
             $this->load->model('m_spadetail');
             $this->load->model('admin/m_user');
             $this->load->model('m_index');
+            $this->load->helper('language_helper'); 
        }
        
        public function index()
        {
+            $lang = change_language();
             $id=$this->uri->segment(3); //id spa
             if(isset($id) && $id!="")
             {
@@ -26,7 +28,6 @@ class Spadetail extends CI_Controller
                     $data['spalocation'] = $this->m_spadetail->getspalocationID($id);
                     
                     $loaispcuaspa=$this->m_spadetail->loadloaisanpham($id); //loai san pham cua spa cung cap
-
                     if(count($loaispcuaspa)>0)
                     {
                         $arr_protype_pro=array(); //mang list product type va product cua producttype do
@@ -42,6 +43,7 @@ class Spadetail extends CI_Controller
                     /*echo "<pre>";
                     print_r($data['arr_protype_pro']);
                     echo "</pre>";die;*/
+                    // echo 'aaaaaaaaaa';
                     $cmtcap1=$this->m_spadetail->loadcommentfirst($id); //load cmt cap 1 cua spa
                     if(count($cmtcap1)>0)
                     {
@@ -62,12 +64,7 @@ class Spadetail extends CI_Controller
                     $data['CommentString'] = $this->m_index->getCommentStr();
                     $data['listspatt'] = $this->m_spadetail->getlistspa();
                     //$data['imagefrist'] = $this->m_spadetail->getfristhinh($id);
-                    $lang = "vi-VN";
-                     if(isset($_SESSION['Lang']))
-                          $lang = $_SESSION['Lang']; 
-                       else
-                           $_SESSION['Lang']=$this->m_mail->getSetting("LangaugeDefault");
-                      
+                    
                     $this->load->view($lang.'/spadetail',$data);
                 }
                 else

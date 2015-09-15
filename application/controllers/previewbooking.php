@@ -8,20 +8,13 @@ class Previewbooking extends CI_Controller
             $this->load->model('m_checkout');
             $this->load->model('m_index');
             $this->load->model('m_mail');
+            $this->load->helper('language_helper');
        }
        
        public function index()
        {
-           $lang = "vi-VN";
-           if(isset($_SESSION['Lang']))
-           {
-              $lang = $_SESSION['Lang'];
-           }
-           else
-           {
-               $_SESSION['Lang']=$this->m_mail->getSetting("LangaugeDefault");
-               //$lang= 
-           }
+            $lang = change_language();
+           
             $id=$this->uri->segment(3);
             if(isset($id) && $id!="")
                 $str = $this->m_checkout->previewbooking($id);

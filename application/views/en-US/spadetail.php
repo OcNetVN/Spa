@@ -105,12 +105,12 @@
                     </div>                	
                 </div>
                 <div class="col-nav"> 
-                    <h4 style="text-transform:uppercase; width:100%; clear:both;">Giới thiệu</h4>
+                    <h4 style="text-transform:uppercase; width:100%; clear:both;">introduce</h4>
                     <span id="spansortintro">
                         <?php 
                             echo substr($ttspa->Intro,0,250);
                         ?>
-                        <p><a href="javascript:void(0);" onclick="extendintro();">Xem thêm…</a></p>
+                        <p><a href="javascript:void(0);" onclick="extendintro();">View more...</a></p>
                     </span>
                     <span id="spanfullintro" style="display: none;">
                         <?php 
@@ -131,9 +131,9 @@
                 	<div class="content">
                     	<!-- Nav tabs -->
                         <ul class="nav nav-tabs" role="tablist">
-                          <li><a href="#overview" role="tab" data-toggle="tab" >Tổng quan</a></li>
-                          <li class="active"><a href="#services" role="tab" data-toggle="tab">Dịch vụ, sản phẩm</a></li>
-                          <li><a href="#reviews" role="tab" data-toggle="tab">Bình luận (<span class="fb-comments-count" data-href="<?php echo $link_spainfo; ?>"></span>)</a></li>
+                          <li><a href="#overview" role="tab" data-toggle="tab" >Overview</a></li>
+                          <li class="active"><a href="#services" role="tab" data-toggle="tab">Services and products</a></li>
+                          <li><a href="#reviews" role="tab" data-toggle="tab">Comment (<span class="fb-comments-count" data-href="<?php echo $link_spainfo; ?>"></span>)</a></li>
                         </ul>
                         
                         <!-- Tab panes -->
@@ -142,17 +142,17 @@
                               <?php
                                     if(isset($ttspa->Intro) && $ttspa->Intro!="") //gioi thieu
                                     {
-                                        echo "<h3 id=\"bookmark_gioithieu\" name=\"bookmark_gioithieu\">Giới thiệu</h3>";
+                                        echo "<h3 id=\"bookmark_gioithieu\" name=\"bookmark_gioithieu\">Introduce</h3>";
                                         echo '<p>'.$ttspa->Intro.'</p>';
                                     }
                                     if(isset($ttspa->Note) && $ttspa->Note!="") //ghi chu
                                     {
-                                        echo "<h3>Ghi chú</h3>";
+                                        echo "<h3>Notes</h3>";
                                         echo '<p>'.$ttspa->Note.'</p>';
                                     }
                                     if(isset($info) && count($info)>0) //tien ich cua spa
                                     {
-                                        echo "<h3>Tiện ích</h3>";
+                                        echo "<h3>Utilities</h3>";
                                         echo '<p>';
                                             foreach($info as $row_info)
                                             {
@@ -162,7 +162,7 @@
                                     }
                                     if(isset($spatype) && $spatype!="") //tien ich cua spa
                                     {
-                                        echo "<h3>Loại spa, hình thức Spa</h3>";
+                                        echo "<h3>Category spa, form Spa</h3>";
                                         echo "- ".$spatype;
                                     }
                                     
@@ -172,7 +172,7 @@
                           <div class="tab-pane active" id="services">
                                 <?php 
                                     if(!isset($arr_protype_pro) || (isset($arr_protype_pro) && count($arr_protype_pro)==0)) 
-                                        echo "<h3>Không có dịch vụ nào</h3>";
+                                        echo "<h3>No services</h3>";
                                     else
                                     {
                                 ?>
@@ -248,10 +248,10 @@
                                 <div id="addcomment__0" style="display: none" class="wrap-add-comment">
                                     <form role="form">
                                         <div class="form-group">
-                                            <label>Nội dung bình luận</label>
+                                            <label>Content comment</label>
                                             <textarea class="form-control" rows="3" id="contentaddcmt_0"></textarea>
                                         </div>
-                                        <button type="button" class="btn btn-default pull-right" onclick="btnsendcomment(0,<?php echo $ttspa->spaID; ?>);">Gửi bình luận</button>
+                                        <button type="button" class="btn btn-default pull-right" onclick="btnsendcomment(0,<?php echo $ttspa->spaID; ?>);">Send comment</button>
                                     </form>
                                 </div>  
                             
@@ -351,7 +351,7 @@
                           </div>
                         </div><!-- End Tab Content -->
                          <br />
-                        <h3>Các spa khác</h3>
+                        <h3>Others Spa</h3>
                         <div class="wrap-products1 related-products">
                             <?php if(count($listspatt) > 0){
                                    foreach($listspatt as $arr_spa){  
@@ -366,7 +366,7 @@
                                             <div class="wrap-product shadow-box">
                                                 <a href="<?php echo base_url('spadetail/index/'.$arr_spa->spaID); ?>" >
                                                     <div class="wrap-thumb" style="background-image:url(<?php $imglnk = $this->m_index->laylink($arr_spa->spaID);echo $imglnk;?>);">
-                                                        <div class="wrap-sales">Địa điểm</div>
+                                                        <div class="wrap-sales">Location</div>
                                                     </div>
                                                 </a>
                                                 <div class="wrap-content">
@@ -487,18 +487,18 @@
                           <dd><a href="http://<?php echo $ttspa->Website; ?>" target="_blank"><?php echo $ttspa->Website; ?></a></dd>
                         </dl>
                     </div>
-                  <h3 class="section-title-filter">Giờ hoạt động</h3>
+                  <h3 class="section-title-filter">Hours of operation</h3>
                     <table width="100%" border="0" cellspacing="2" cellpadding="2" style="margin-bottom:20px;">
                         <?php
                             $arr_thu=array(
-                                            "2"=>"Thứ 2",
-                                            "3"=>"Thứ 3",
-                                            "4"=>"Thứ 4",
-                                            "5"=>"Thứ 5",
-                                            "6"=>"Thứ 6",
-                                            "7"=>"Thứ 7",
-                                            "8"=>"Chủ nhật",
-                                            "9"=>"Ngày lễ",
+                                            "2"=>"Monday",
+                                            "3"=>"Tuesday",
+                                            "4"=>"Wednesday4",
+                                            "5"=>"Thursday",
+                                            "6"=>"Friday",
+                                            "7"=>"Saturday",
+                                            "8"=>"Sunday",
+                                            "9"=>"Holiday",
                             );
                             foreach($timehoatdong as $row_time)
                             {

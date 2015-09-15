@@ -8,13 +8,13 @@
 
   <li role="presentation" id="menu_term"><a href="<?php echo base_url('/term');?>">For members</a></li>
 
-  <li role="presentation" id="menu_term"><a href="<?php echo base_url('/tuyendung');?>">Recruitment</a></li>
+  <!-- <li role="presentation" id="menu_term"><a href="<?php echo base_url('/tuyendung');?>">Recruitment</a></li>
 
   <li role="presentation" id="menu_term"><a href="<?php echo base_url('/dieukhoan');?>">Operation Regulation</a></li>
 
   <li role="presentation" id="menu_term"><a href="<?php echo base_url('/chinhsach');?>">Conditions & Terms</a></li>
 
-  <li role="presentation" id="menu_term"><a href="<?php echo base_url('/baomat');?>">Privacy Policy</a></li>
+  <li role="presentation" id="menu_term"><a href="<?php echo base_url('/baomat');?>">Privacy Policy</a></li> -->
 
   <li role="presentation" id="menu_term"><a href="<?php echo base_url('/cauhoi');?>">FAQ</a></li>
 
