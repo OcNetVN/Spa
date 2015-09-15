@@ -145,7 +145,7 @@
                                     echo ' <td>';
                                             echo '<span style="display:none;">'.$row_pro->FromTime.'</span>';
                                             echo '<span style="display:none;">'.$row_pro->ToTime.'</span>';
-                                    echo 'Từ: <span>'.$fromtime.'</span> đến <span>'.$totime." ".$fidate.'</span>';
+                                    echo 'From: <span>'.$fromtime.'</span> To <span>'.$totime." ".$fidate.'</span>';
                                     echo '</td>';
                                     ?>
                                             <td><input name="Qty_<?php echo $row_pro->ProductID; ?>" onchange="changeQty_step1('<?php echo $row_pro->ProductID."','".$row_info['spa']->spaID."','".$stt; ?>')" id="Qty_<?php echo $row_pro->ProductID; ?>" type="number" min="1" class="numberic" style="width:40px; text-align:center;" <?php if($row_pro->Qty>0) echo 'value="'.$row_pro->Qty.'"'; else 'value="1"'; ?> />
