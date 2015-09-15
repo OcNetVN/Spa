@@ -14,11 +14,12 @@ class Test extends CI_Controller
             $this->load->model('m_mail');
             $this->load->model('m_sms');
             $this->load->model('admin/m_test');
+            $this->load->helper('language_helper');
 
        }
        
        public function index(){
-            
+            $lang = change_language();
             $this->load->view('ViewTest1');
        }
        public function usetsession($name){

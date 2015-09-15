@@ -10,6 +10,7 @@ class Indexuser extends CI_Controller
             $this->load->model('m_index');
             $this->load->model('m_mail');
             $this->db2 = $this->load->database('thebooking', TRUE);
+            $this->load->helper('language_helper');
        }
        //0: chua thanh toan ma huy
         //1:chua thanh toan
@@ -20,16 +21,7 @@ class Indexuser extends CI_Controller
         //6: table booking: co nhieu sp trong 1 booking nhung huy chua het
        public function index()
        {
-           $lang = "vi-VN";
-           if(isset($_SESSION['Lang']))
-           {
-              $lang = $_SESSION['Lang'];
-           }
-           else
-           {
-               $_SESSION['Lang']=$this->m_mail->getSetting("LangaugeDefault");
-               //$lang= 
-           }
+            $lang = change_language();
             if(isset($_SESSION['AccUser']))
             {
                 $userid=$_SESSION['AccUser']['User']->UserId;

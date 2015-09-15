@@ -76,60 +76,7 @@
     
 
 <!-- Modal -->
-<!-- Modal -->
-<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button id="btnCloseloginModal" type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">Đăng nhập</h4>
-      </div>
-      <div class="modal-body">
-          <div class="row">            
-            <div class="col-md-12">
-            
-                <form class="form" role="form">
-                  <div class="form-group">
-                    <button type="button" class="btn btn-default btn-google" style="width:100%;">Google Account</button>
-                  </div>
-                      <div class="form-group DaLogin">
-                    <button type="button" class="btn btn-default btn-facebook" style="width:100%;">Facebook Account</button>
-                  </div>
-                  <hr />
-                  
-                  <div class="form-group">
-                    Email đăng nhập
-                    <div class="input-group">
-                      <div class="input-group-addon">@</div>
-                      <input id="txtUserIDEmail" class="form-control" type="email" placeholder="Enter email">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    Mật mã
-                    <label class="sr-only" for="exampleInputPassword2">Password</label>
-                    <input id="txtPass" type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox"> Nhớ cho lần đăng nhập sau
-                    </label>
-                  </div>
-                  <div class="form-group">
-                    <button type="button" class="btn btn-success" onClick="DoLogin();">Đăng nhập</button> 
-                      
-                  </div>
-                    <div class="form-group">
-                    <a href="#" onClick="">Quên mật mã?</a>
-                  </div>
-                  <div >
-                    <span id="spanTBLogin" class="informationNote" style="display: none; color: red;" > Lỗi đăng nhập!!!</span>
-                  </div>
-                </form>                
-            </div>
-        </div>
-      </div>
-</div>
-<!-- End Modal -->
+
 <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
 <script type="text/javascript">
 var switchTo5x=true;

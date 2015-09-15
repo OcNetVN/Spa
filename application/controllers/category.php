@@ -8,8 +8,11 @@ class Category extends CI_Controller
             $this->load->model('m_category'); 
             $this->load->model('m_index'); 
             $this->load->model('m_mail'); 
+            $this->load->helper('language_helper');
        }
        public function index(){
+            $lang = change_language();
+
             $res['listpro_limit4'] = $this->m_index->listpro_limit4();
             $res['loaispcon'] = $this->m_index->layloaiconsp();
             $res['MenuString'] = $this->m_index->getMenuStr();
@@ -53,17 +56,7 @@ class Category extends CI_Controller
             /*echo "<pre>";
                 print_r($res['listspa']);
             echo "</pre>";die;*/
-               $lang = "vi-VN";
-               if(isset($_SESSION['Lang']))
-               {
-                  $lang = $_SESSION['Lang'];
-               }
-               else
-               {
-                   $_SESSION['Lang']=$this->m_mail->getSetting("LangaugeDefault");
-                   //$lang= 
-               }
-                //$lang = $_SESSION['Lang'];                   
+                             
                 $this->load->view($lang.'/category',$res);
        }
        public function searchspa()

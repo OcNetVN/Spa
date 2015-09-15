@@ -324,15 +324,14 @@
 
 thebooking.vn &copy;  2014 - <b>BETA(UAT) </b><br> 
 
-©2014 Công Ty Cổ Phần Dịch Vụ Thông Tin KỶ NGUYÊN<br>
+©2014 Ky Nguyen Online Joint Stock Company<br>
 
-Địa chỉ: Tầng 3, 319C14 Lý Thường Kiệt, Phường 15, Q.11, TP.HCM<br>
+Add: 3th Floor, 319C14 Ly Thuong Kiet Street, Ward 15, District 11, Ho Chi Minh<br>
 
-Điện thoại: 08. 6255 5657<br>
+Phone: 08. 6255 5657<br>
 
-ĐKKD: 0312789573, cấp ngày 22/05/2014 tại Sở Kế Hoạch và Đầu Tư TP. HCM<br>
+Bussiness license no: 0312789573, date 05/22/2014 at Department of Planning and Investment<br>
 
-<a href="http://spa.thebooking.vn/dieukhoan" target="_blank">Quy chế sàn giao dịch TMĐT thebooking.vn</a>
 
 </p>
 

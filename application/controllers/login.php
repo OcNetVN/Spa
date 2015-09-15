@@ -8,6 +8,7 @@ class Login extends CI_Controller
             $this->load->model('m_index');
             $this->load->model('admin/m_user');
             $this->load->model('m_mail');
+            $this->load->helper('language_helper'); 
         }
         
        function GetMenuCap1($roleID,$moduleID) 
@@ -70,16 +71,8 @@ class Login extends CI_Controller
         }
         
         public function index(){
-               $lang = "vi-VN";
-               if(isset($_SESSION['Lang']))
-               {
-                  $lang = $_SESSION['Lang'];
-               }
-               else
-               {
-                   $_SESSION['Lang']=$this->m_mail->getSetting("LangaugeDefault");
-                   //$lang= 
-               }
+                $lang = change_language();
+               
                 $this->load->library('form_validation');
                 $this->form_validation->set_rules('username','User name','required');
                 $this->form_validation->set_rules('password','Password','required');

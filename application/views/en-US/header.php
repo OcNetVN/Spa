@@ -89,13 +89,21 @@
                                       </span></a>                   
                                 </li>
                                 
-                                  <li class="dropdown menu-flag">                          
-                                      <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">Language <span class="caret"></span></a>
-                                      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo base_url('index?language=vi-VN'); ?>"><img src="<?php echo base_url('resources/front/images/flag-vn.png'); ?>" width="27" height="18" alt="Vietnamese" /></a></li>
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo base_url('index?language=en-US'); ?>"><img src="<?php echo base_url('resources/front/images/flag-en.png'); ?>" width="27" height="18" alt="English" /></a></li>
-                                      </ul>                    
-                                  </li>
+                                  <?php
+                              $arr_flag = array( 'Vietnamese' => 'vi-VN', 'English' => 'en-US' );
+                              // print_r($arr_flag['Tiếng Việt']);
+                              ?>
+                                <li class="dropdown menu-flag">                          
+                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin"><img src="<?php echo base_url('resources/front/images/flag-'.$_SESSION['Lang'].'.png'); ?>" width="27" height="18" alt="English" /> <span class="caret"></span></a>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                      <?php foreach ($arr_flag as $key => $value) { 
+                                                if($value!=$_SESSION['Lang']){
+                                      ?>
+                                             <li role="presentation"><a role="menuitem" tabindex="-1" ><img src="<?php echo base_url('resources/front/images/flag-'.$value.'.png'); ?>" id="change_language" width="27" height="18" alt="<?php echo $key;?>" data="<?php echo $value;?>" /></a></li>
+                                      <?php } }?>
+
+                                    </ul>                   
+                                </li>
                                   <li class="dropdown menu-flag menu-currency">                          
                                       <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">VND <span class="caret"></span></a>
                                       <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
@@ -204,6 +212,28 @@
 </div>
 <!-- End Modal -->                       
 <script type="text/javascript">
+$(document).ready(function(){
+    $("#change_language").click(function(){
+        // alert("The paragraph was clicked.");
+        var data_lang = document.getElementById('change_language').getAttribute("data");
+        // console.log(data);
+        $.ajax({
+            type: "POST",
+            url: getUrspal() + "index/Change_Language",
+            dataType: "text",
+            data: {
+                language: data_lang
+            },
+            cache: false,
+            success: function (data) {
+              var str= window.location.href.toString() ;
+              parent.location=str;    
+            }
+        });
+        
+
+    });
+});
 function DoThoat()
 {
 

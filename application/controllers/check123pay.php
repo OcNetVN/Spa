@@ -10,10 +10,12 @@ class Check123pay extends CI_Controller
             $this->load->model('m_index');
             $this->load->model('m_mail');
             $this->db2 = $this->load->database('thebooking', TRUE);
+            $this->load->helper('language_helper'); 
        }
        
        public function index()
        {
+            $lang = change_language();
             if(isset($_SESSION["check_goto123pay"]))
             {
                 if((isset($_SESSION['AccUser']) || isset($_SESSION['object'])) && isset($_SESSION['check2']) && isset($_SESSION['Cart']))
@@ -43,16 +45,7 @@ class Check123pay extends CI_Controller
                     {
                         $data['user_object']=$this->m_checkout->layobjecttheObjectID($_SESSION['object']->ObjectId);
                     }
-                    $lang = "vi-VN";
-                   if(isset($_SESSION['Lang']))
-                   {
-                      $lang = $_SESSION['Lang'];
-                   }
-                   else
-                   {
-                       $_SESSION['Lang']=$this->m_mail->getSetting("LangaugeDefault");
-                       //$lang= 
-                   }
+                    
                     $this->load->view($lang.'/check123pay',$data);
                 }
                 else

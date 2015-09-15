@@ -2,10 +2,13 @@
 	"folders":
 	[
 		{
-			"path": "."
+			"path": "C:\\xampp\\htdocs\\CI_Tri"
 		},
 		{
-			"path": "C:\\xampp\\htdocs\\CI_Tri"
+			"path": "C:\\xampp\\htdocs\\account1"
+		},
+		{
+			"path": "C:\\xampp\\htdocs\\spaacc"
 		}
 	]
 }

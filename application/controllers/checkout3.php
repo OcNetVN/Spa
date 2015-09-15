@@ -9,24 +9,18 @@ class CheckOut3 extends CI_Controller
             $this->load->model('admin/m_user');
             $this->load->model('m_index');
             $this->load->model('m_mail');
+            $this->load->helper('language_helper');
        }
        
        public function index()
        {
+            $lang = change_language();
+            
             if(isset($_SESSION['AccUser']))
             {
                 $paywith=$this->uri->segment(3)?$this->uri->segment(3):0;
                 $data['paywith'] = $paywith;
-                $lang = "vi-VN";
-               if(isset($_SESSION['Lang']))
-               {
-                  $lang = $_SESSION['Lang'];
-               }
-               else
-               {
-                   $_SESSION['Lang']=$this->m_mail->getSetting("LangaugeDefault");
-                   //$lang= 
-               }
+                
                 //$data['Payment']=$this->m_checkout->gethinhthucthanhtoan();
                 $this->load->view($lang.'/checkout3',$data);
             }

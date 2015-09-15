@@ -14,7 +14,7 @@ class Register extends CI_Controller
             $this->load->model('m_mail');  
             $this->load->library('session');  //Load the Session 
             $this->config->load('facebook'); //Load the facebook.php file which is located in config directory
-            
+            $this->load->helper('language_helper');
         }
         
         function GetMenuCap1($roleID,$moduleID) 
@@ -119,34 +119,17 @@ class Register extends CI_Controller
         }
         
         public function kichhoat($id){
-           $lang = "vi-VN";
-           if(isset($_SESSION['Lang']))
-           {
-              $lang = $_SESSION['Lang'];
-           }
-           else
-           {
-               $_SESSION['Lang']=$this->m_mail->getSetting("LangaugeDefault");
-           }
+            $lang = $this->language->change_language();
             $res['message'] = $this->m_register->kichhoat($id);
             $this->load->view($lang.'/v_kichhoat',$res);
             //redirect("index");
         }
         
         public function index(){
-          $lang = "vi-VN";
-           if(isset($_SESSION['Lang']))
-           {
-              $lang = $_SESSION['Lang'];
-           }
-           else
-           {
-               $_SESSION['Lang']=$this->m_mail->getSetting("LangaugeDefault");
-           }
+            $lang = change_language();
             $res['MenuString'] = $this->m_index->getMenuStr();
             $res['CommentString'] = $this->m_index->getCommentStr();
             $res['ProvinceString'] = $this->m_register->get_provincel();
-            //$lang = $_SESSION['Lang'];
             $this->load->view($lang.'/register',$res);
         }
         

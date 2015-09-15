@@ -9,10 +9,12 @@ class Productdetail extends CI_Controller
             $this->load->model('admin/m_user');
             $this->load->model('m_index');
             $this->load->model('m_spadetail');
+            $this->load->helper('language_helper');
        }
        
        public function index()
        {
+            $lang = change_language();
             $id=$this->uri->segment(3); //id spa
             if(isset($id) && $id!="")
             {
@@ -22,12 +24,7 @@ class Productdetail extends CI_Controller
                 {
                     $data['MenuString'] = $this->m_index->getMenuStr();
                     $data['CommentString'] = $this->m_index->getCommentStr();
-                    $lang = "vi-VN";
-                     if(isset($_SESSION['Lang']))
-                          $lang = $_SESSION['Lang']; 
-                       else
-                           $_SESSION['Lang']=$this->m_mail->getSetting("LangaugeDefault");
-                      
+                                        
                     $this->load->view($lang.'/productdetail',$data);
                 }
                 else

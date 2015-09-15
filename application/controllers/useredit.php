@@ -10,21 +10,19 @@ class Useredit extends CI_Controller
             $this->load->model('m_mail');
             $this->load->model('admin/m_user');
             $this->db2 = $this->load->database('thebooking', TRUE);
+            $this->load->helper('language_helper'); 
        }
        
        public function index()
        {
+            $lang = change_language();
             if(isset($_SESSION['AccUser']))
             {
                 $userid=$_SESSION['AccUser']['User']->UserId;
                 $data['MenuString'] = $this->m_index->getMenuStr();
                 $data['CommentString'] = $this->m_index->getCommentStr();
                 $data['ttuser']=$this->m_useredit->layobjecttheouserid($userid);
-                $lang = "vi-VN";
-                 if(isset($_SESSION['Lang']))
-                      $lang = $_SESSION['Lang'];
-                  else
-                       $_SESSION['Lang']=$this->m_mail->getSetting("LangaugeDefault");
+                $lang = $this->language->change_language();
                 $this->load->view($lang.'/useredit',$data);
             }
             else

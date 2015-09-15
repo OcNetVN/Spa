@@ -9,24 +9,15 @@ class Index extends CI_Controller
             $this->load->model('m_news');
             $this->load->model('m_mail');
             $this->load->model('admin/m_user');
-            $this->load->library('session'); 
+            $this->load->library('session');
             $this->load->helper('cookie');
+            $this->load->helper('language_helper'); 
        }
        public function index(){
-           $lang = "vi-VN";
-           if(isset($_GET['language'])){
-               $_SESSION['Lang'] = $_GET['language'];
-           }
-           if(isset($_SESSION['Lang']))
-           {
-              $lang = $_SESSION['Lang'];
-           }
-           else
-           {
-               $_SESSION['Lang']=$this->m_mail->getSetting("LangaugeDefault");
-           }
 
-           
+        // session_unset();
+        // return;
+            $lang = change_language();
             $res['listpro_limit4'] = $this->m_index->listpro_limit4();
             $res['loaispcon'] = $this->m_index->layloaiconsp();
             $res['MenuString'] = $this->m_index->getMenuStr();
@@ -100,6 +91,13 @@ class Index extends CI_Controller
          echo $res;
      }  
        //////////////
+       ///
+      public function Change_Language(){
+        // $data = $_POST['language'];
+         echo $lang = change_language();
+
+
+      }
     
     public function TestInsertSession($id)
     {

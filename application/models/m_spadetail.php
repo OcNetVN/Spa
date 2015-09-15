@@ -119,7 +119,7 @@ class M_spadetail extends CI_Model
                     
         if(strpos($actual_link,"localhost")>0 || strpos($actual_link,"127.0.0.1")>0)
         {
-            $sql="SELECT a.*,b.`FullName` FROM `comments` a, `thebooking`.`objects` b, `thebooking`.`users` c
+            $sql="SELECT a.*,b.`FullName` FROM `comments` a, `spabooking_thebookingdev`.`objects` b, `spabooking_thebookingdev`.`users` c
                 WHERE a.`ObjectIDD`='$spaid' AND a.`Level`='1'
                       AND a.`CreatedBy`= c.`UserId` AND c.`ObjectId`=b.`ObjectId`
                     AND a.`ApprovedBy` IS NOT NULL AND a.`ApprovedDate` IS NOT NULL 
