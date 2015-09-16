@@ -16,7 +16,7 @@ class Index extends CI_Controller
        public function index(){
 
         // session_unset();
-        // return;
+        // return; 
             $lang = change_language();
             $res['listpro_limit4'] = $this->m_index->listpro_limit4();
             $res['loaispcon'] = $this->m_index->layloaiconsp();
