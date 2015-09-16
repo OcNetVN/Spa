@@ -15,7 +15,7 @@ class Useredit extends CI_Controller
        
        public function index()
        {
-            $lang = change_language();
+            $lang = change_language(); 
             if(isset($_SESSION['AccUser']))
             {
                 $userid=$_SESSION['AccUser']['User']->UserId;
