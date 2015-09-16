@@ -78,7 +78,7 @@
     
     <div class="container" style="padding-top:10px; padding-bottom:10px;">
     <!-- InstanceBeginEditable name="Main Content" -->
-    	<h1 class="page-title-bar">Thông tin người dùng</h1>
+    	<h1 class="page-title-bar">User Information</h1>
         
     	<div class="wrap-2cols nav-left userprofile">
         	<div class="col-nav">
@@ -94,10 +94,10 @@
                  <?php 
                     if(isset($ttuser->ScoreBalance) && $ttuser->ScoreBalance!="" && ($ttuser->ScoreBalance)>0)
                     {
-                        echo "Tổng điểm: <span>".number_format($ttuser->ScoreBalance)."</span> điểm";
+                        echo "total point: <span>".number_format($ttuser->ScoreBalance)."</span> point";
                     }
                     else
-                        echo "Bạn chưa có điểm";
+                        echo "You have not point";
                  ?>
                 </p>
                 <p>
@@ -106,17 +106,17 @@
                  <?php 
                     if(isset($ttuser_db2->OutStanding) && $ttuser_db2->OutStanding!="" && ($ttuser_db2->OutStanding)>0)
                     {
-                        echo "Số dư: <span>".number_format($ttuser_db2->OutStanding)."</span> VNĐ";
+                        echo "Surplus: <span>".number_format($ttuser_db2->OutStanding)."</span> VNĐ";
                     }
                     else
-                        echo "Số dư: 0 VNĐ";
+                        echo "Surplus: 0 VNĐ";
                  ?>
                  </span>
                 </p>
-                <button type="button" class="btn btn-default" style="width:100%;" onClick="editavatar();">Sửa ảnh đại diện</button><br /><br />
-                <button type="button" class="btn btn-default" style="width:100%;" onClick="parent.location='useredit'">Sửa thông tin</button>
+                <button type="button" class="btn btn-default" style="width:100%;" onClick="editavatar();">Edit Avatar</button><br /><br />
+                <button type="button" class="btn btn-default" style="width:100%;" onClick="parent.location='useredit'">Edit Information</button>
                 <hr />
-                <h5>Tên đăng nhập của tôi</h5>
+                <h5>Username</h5>
                 <?php echo $_SESSION['AccUser']['User']->UserId; ?>
                 <!--<hr />
                 <h5>Public Profile</h5>
@@ -129,7 +129,7 @@
                 <div class="content" id="contentbook">
                      <!-- Nav tabs -->
                         <ul class="nav nav-tabs" role="tablist">
-                          <li class="active"><a href="#overview" role="tab" data-toggle="tab" >Lịch sử đặt chổ</a></li>
+                          <li class="active"><a href="#overview" role="tab" data-toggle="tab" >History Booking</a></li>
                         </ul>
                         <?php 
                             if(isset($count_bookingid) && $count_bookingid->total>0)
@@ -138,7 +138,7 @@
                         <!-- Tab panes -->
                         <div class="tab-content">
                           <div class="tab-pane active" id="overview">
-                          		<h3>Lịch sử đặt chổ</h3>
+                          		<h3>History Booking</h3>
                                 <!--<ul class="nav nav-pills pull-right">
                                   <li role="presentation" class="dropdown">
                                     <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
@@ -150,7 +150,7 @@
                                     </ul>
                                   </li>
                                 </ul>--> 
-                                <h5 style="color: red;">* Lưu ý: Chỉ được huỷ đặt chổ trước thời điểm sử dụng dịch vụ là 48 giờ.</h5>
+                                <h5 style="color: red;">* Note: Only cancellations prior to the use of 48-hour service.</h5>
                                 <div class="wrap-table" id="content_list">
                                 	
                                 </div>
@@ -165,7 +165,7 @@
                         ?>
                                 <div class="tab-content">
                                     <div class="tab-pane active" id="overview">
-                                        <h3>Bạn chưa đặt chổ</h3>
+                                        <h3>You do not booking</h3>
                                     </div>
                                 </div>
                         <?php            
@@ -175,7 +175,7 @@
                 </div>
                 <div id="diveditavatar" style="display: none;">
                     <div class="form-group">
-                        <label for="avatar_edit" class="col-sm-4 control-label">Hình đại diện</label>
+                        <label for="avatar_edit" class="col-sm-4 control-label">Avatar</label>
                         <div class="col-sm-offset-1 col-sm-4">
                             <div class="wrap-avatar" id="preview">
     						</div><br />

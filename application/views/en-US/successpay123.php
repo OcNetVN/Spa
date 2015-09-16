@@ -44,7 +44,7 @@
     <div class="container" style="padding-top:10px; padding-bottom:10px;">
     <!-- InstanceBeginEditable name="Main Content" -->
     <div id="content_page1">
-    	<h1 class="page-title-bar">Thông tin thanh toán</h1>
+    	<h1 class="page-title-bar">Billing Information</h1>
         <div class="tab-content">
         
         <!--thanh toan bang 123pay-->

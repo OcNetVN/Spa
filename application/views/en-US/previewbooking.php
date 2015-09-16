@@ -212,10 +212,10 @@
                                     <div id="wrap-add-comment-popup" style="display: none" class="wrap-add-comment">
                                         <form role="form">
                                             <div class="form-group">
-                                                <label>Nội dung bình luận</label>
+                                                <label>Content comment</label>
                                                 <textarea class="form-control" rows="3"></textarea>
                                             </div>
-                                            <button type="submit" class="btn btn-default pull-right">Gửi bình luận</button>
+                                            <button type="submit" class="btn btn-default pull-right">Send comment</button>
                                         </form>
                                     </div>  
                                 
@@ -248,10 +248,10 @@
                                                             <div id="wrap-add-comment2-popup" style="display: none" class="wrap-add-comment">
                                                                 <form role="form">
                                                                     <div class="form-group">
-                                                                        <label>Nội dung bình luận</label>
+                                                                        <label>Content comment</label>
                                                                         <textarea class="form-control" rows="3"></textarea>
                                                                     </div>
-                                                                    <button type="submit" class="btn btn-default pull-right">Gửi bình luận</button>
+                                                                    <button type="submit" class="btn btn-default pull-right">Send comment</button>
                                                                 </form>
                                                               </div>
                                                         </td>

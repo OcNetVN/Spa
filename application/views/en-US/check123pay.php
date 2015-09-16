@@ -27,7 +27,7 @@
     
     <div id="content_page1">
     <div id="loadcontent1">
-    	<h1 class="page-title-bar" style="display: none;">Thông tin thanh toán</h1>
+    	<h1 class="page-title-bar" style="display: none;">Billing Information</h1>
         <div class="tab-content">
         
         <!--thanh toan bang 123pay-->
@@ -67,7 +67,7 @@
                 <table width="100%" class="table table-bordered">
                       <tr>
                         <td>Tên khách hàng</td>
-                        <td><?php if(isset($user_object->FullName) && $user_object->FullName!="") echo $user_object->FullName; else "Chưa cung cấp"; ?></td>
+                        <td><?php if(isset($user_object->FullName) && $user_object->FullName!="") echo $user_object->FullName; else "Not provided"; ?></td>
                       </tr>
                       <tr>
                         <td>Giới tính</td>
