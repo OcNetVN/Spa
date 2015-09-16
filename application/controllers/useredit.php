@@ -22,7 +22,6 @@ class Useredit extends CI_Controller
                 $data['MenuString'] = $this->m_index->getMenuStr();
                 $data['CommentString'] = $this->m_index->getCommentStr();
                 $data['ttuser']=$this->m_useredit->layobjecttheouserid($userid);
-                $lang = $this->language->change_language();
                 $this->load->view($lang.'/useredit',$data);
             }
             else

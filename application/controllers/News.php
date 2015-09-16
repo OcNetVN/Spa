@@ -12,7 +12,7 @@ class News extends CI_Controller
             $this->load->helper('language_helper');         
        }
        public function index(){
-             $lang = change_language();
+            $lang = change_language();
             $res['listpro_limit4'] = $this->m_index->listpro_limit4();
             $res['loaispcon'] = $this->m_index->layloaiconsp();
             $res['MenuString'] = $this->m_index->getMenuStr();
@@ -52,7 +52,6 @@ class News extends CI_Controller
                 }
             }
             
-           
             //echo $a;die;
             $this->load->view($lang.'/news',$res);
        }

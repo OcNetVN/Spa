@@ -1,4 +1,4 @@
-<! html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -24,7 +24,7 @@
             <div class="container">
                     <div class="row">
                         <?php
-                             DOCTYPErequire("header.php");
+                             require("header.php");
                          ?>
                     </div>                    
                     
@@ -124,7 +124,7 @@
                 </ul>
               </li><!--end tin theo chu de-->
               <li id="newnews"><!--tin moi nhat-->
-                <h2><span>Latest News</h2>
+                <h2><span>Tin tức mới nhất</h2>
                 <ul id="dstinmoi">
                     <?php 
                      if(isset($dstintucmoinhat) && count($dstintucmoinhat)>0)
@@ -197,7 +197,7 @@
                 }
                 else
                 {
-                    echo '<h1 class="title">no news</h1>';
+                    echo '<h1 class="title">Chưa có tin tức nào</h1>';
                 }
             ?>
             </div>
@@ -239,7 +239,7 @@
                             }
                             else
                             {
-                                echo "<li>No News!</li>";
+                                echo "<li>Chưa có!</li>";
                             }
                         ?>
                     </ul>
