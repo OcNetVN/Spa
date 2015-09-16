@@ -188,13 +188,13 @@
 
                                     <ul class="nav nav-tabs" role="tablist">
 
-                                      <li class="active"><a href="#overview-popup" role="tab" data-toggle="tab">Chi tiết</a></li>                          
+                                      <li class="active"><a href="#overview-popup" role="tab" data-toggle="tab">Details</a></li>                          
 
-                                      <li><a href="#reviews-popup" role="tab" data-toggle="tab">Đánh giá</a></li>
+                                      <li><a href="#reviews-popup" role="tab" data-toggle="tab">Evaluation</a></li>
 
-                                      <li><a href="#venue-popup" role="tab" data-toggle="tab">Thông tin</a></li>
+                                      <li><a href="#venue-popup" role="tab" data-toggle="tab">Information</a></li>
 
-                                      <li><a href="#venue-manual" role="tab" data-toggle="tab">Hướng dẫn đặt chỗ</a></li>
+                                      <li><a href="#venue-manual" role="tab" data-toggle="tab">Guide booking</a></li>
 
                                     </ul>
 
@@ -206,34 +206,34 @@
 
                                             <input type="text" id="txtProductID" style="display: none;" value="" />
 
-                                            <h4>Thời gian dịch vụ: <span class="spanProductDuration">00</span> Phút</h4>
+                                            <h4>Time: <span class="spanProductDuration">00</span> Phút</h4>
 
-                                            <h4>Giá dịch vụ: <span class="spanProductPrice"></span></h4>
+                                            <h4>Price: <span class="spanProductPrice"></span></h4>
 
-                                            <h4 style="display: none;" id="divsaveprice">Giá khuyến mãi: <span id="spanProductSavePrice"></span></h4>
+                                            <h4 style="display: none;" id="divsaveprice">Price Promotion: <span id="spanProductSavePrice"></span></h4>
 
                                             <div id="divshortinfo">
-                                                <h4>Thông tin dịch vụ</h4>
+                                                <h4>Information service</h4>
                                                 <p id="divProductDetail0short">
                                                     <!--load data-->
                                                 </p>
-                                                <p><a href="javascript:void(0);" onclick="extendintrobook();">Xem thêm…</a></p>
+                                                <p><a href="javascript:void(0);" onclick="extendintrobook();">view more…</a></p>
                                             </div>
                                             <div id="divfullinfo" style="display: none;">
-                                                <h4>Thông tin dịch vụ</h4>
+                                                <h4>Information service</h4>
                                                 <p id="divProductDetail0"></p>
-                                                <h4>Chính sách dịch vụ</h4>
+                                                <h4>Policy service</h4>
                                                 <p id="divProductDetail1"></p>
-                                                <h4>Các điều khoản khác</h4>
+                                                <h4>Other terms</h4>
                                                 <p id="divProductDetail2"></p>
-                                                <h4>Liệu trình chăm sóc</h4>
+                                                <h4>Care therapy</h4>
                                                 <p id="divProductDetail3"></p>
                                             </div>
                                       </div>
 
                                       <div class="tab-pane" id="venue-manual">
 
-                                      <h4> Xem hướng dẫn đặt chỗ tại đây</h4>
+                                      <h4> See instructions in this book</h4>
 
                                       <iframe width="650" height="360" src=			"https://www.youtube.com/embed/NClL1y9OmKg?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
 
@@ -341,9 +341,9 @@
 
                                       <div class="tab-pane" id="reviews-popup">
 
-                                            <h3>Bình luận</h3>
+                                            <h3>Comment</h3>
 
-                                            <button class="btn btn-default pull-right" onclick="$('#wrap-add-comment-popup').toggle(300);">Viết đánh giá</button>
+                                            <button class="btn btn-default pull-right" onclick="$('#wrap-add-comment-popup').toggle(300);">Write evaluation</button>
 
                                             
 
@@ -353,13 +353,13 @@
 
                                                     <div class="form-group">
 
-                                                        <label>Nội dung bình luận</label>
+                                                        <label>Content comment</label>
 
                                                         <textarea class="form-control" rows="3" id="ContentCommet"></textarea>
 
                                                     </div>
 
-                                                    <a  href="javascript:void(0)"  class="btn btn-default pull-right" onclick="SendComment();">Gửi bình luận</a>
+                                                    <a  href="javascript:void(0)"  class="btn btn-default pull-right" onclick="SendComment();">Send comment</a>
 
                                                     <!--<button type="button" class="btn btn-default pull-right" onclick="SendComment()">Gửi bình luận</button>-->
 
@@ -401,7 +401,7 @@
 
                             <div id="divTheCalendar" class="the-calendar"></div>
 
-                            <button id="btnBackToChooseDay" value="Back" style="display: none;" onclick="BackToChooseDay();">Chọn lại ngày</button>
+                            <button id="btnBackToChooseDay" value="Back" style="display: none;" onclick="BackToChooseDay();">Choose the date</button>
 
                             <span id="spanNgayDaChon" style="color: blue; font-family: arial; font-size: 13px; font-style: italic;"></span>
 

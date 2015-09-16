@@ -114,13 +114,13 @@
     <div class="container" style="padding-top:10px; padding-bottom:10px;">
     <!-- InstanceBeginEditable name="Main Content" -->
     <div id="content_page1">
-    	<h1 class="page-title-bar">Thông tin thanh toán</h1>
+    	<h1 class="page-title-bar">Billing Information</h1>
         <div class="tab-content">
         
        
         <!--step 3-->
        <div id="loadcontent2" >
-       Bạn đã hủy thanh toán đơn hàng hoặc thanh toán không thành công! Vui lòng quay lại để chọn lại hình thức thanh toán!
+       You canceled the payment order or payment failed! Please go back and choose another form of payment!
        </div>
         <!--end step 3-->
         <!--end thanh toan banng 123pay-->
