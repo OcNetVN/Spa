@@ -6,21 +6,21 @@
 
             <div class="col-md-7">
 
-                <h4>WHY SHOULD USE THEBOOKING.VN?</h4>
+                <h4>WHY USE THEBOOKING.VN?</h4>
 
                 <div class=" col-md-6">
 
                     <ul class="list-triangle">
 
-                        <li>Dịch vụ khách hàng chuyên nghiệp.</li>
+                        <li>Exceptional customer services.</li>
 
-                        <li> Xác nhận nhanh chóng qua SMS/Email</li>
+                        <li>Instant SMS/Email confirmation</li>
 
-                        <li>Phương thức thanh toán an toàn, dễ dàng và tiện lợi.</li>
+                        <li>Safe, simply and convenient payment options.</li>
 
-                        <li>Hơn 1000 Spa và hệ thống chăm sóc sắc đẹp tại Việt Nam!</li>
+                        <li>Over than 1000 Vietnam’s Spa&BeautySalon</li>
 
-                        <li>Giá tốt hơn so với đặt chỗ trực tiếp tại Spa&BeautySalon! </li>
+                        <li>Better price than booking directly at the Spa&BeautySalon ! </li>
 
                         
 
@@ -32,17 +32,17 @@
 
                     <ul class="list-triangle">
 
-                        <li>Hỗ trợ 24/7</li>
+                        <li>Support 24/7</li>
 
-                        <li>Đặc biệt cung cấp cho đặt vé theo nhóm.</li>
+                        <li>Special offers for group bookings.</li>
 
-                        <li>Được đảm bảo giá tốt nhất</li>
+                        <li>Best Prices Guaranteed</li>
 
-                        <li>Hoàn tiền ngay khi hủy đặt chỗ.</li>
+                        <li>Refund immediately when cancel booking.</li>
 
-                        <li>Tích lũy điểm thưởng cho mỗi lần đặt chỗ</li>
+                        <li>Get rewards per on every your booking</li>
 
-                        <li>Tiết kiệm hơn cho lần đặt kế tiếp.</li>
+                        <li>Save more money at next bookings.</li>
 
                     </ul>
 
@@ -52,7 +52,7 @@
 
             <div class="col-md-5">
 
-                <h4>FEEL</h4>
+                <h4>TESTIMONIALS</h4>
 
                 <div class="wrap-testimonials">
 
@@ -168,9 +168,9 @@
 
             <h4>NEWSLETTER</h4>
 
-            <span style="font-size: 11px;">  Subscribe to our weekly newsletter us  </span><br />
+            <span style="font-size: 11px;">  Subscribe our weekly newsletters for   </span><br />
 
-            <span style="font-size: 11px;">  about promotions surprise from Spa!  </span> <br />
+            <span style="font-size: 11px;">  amazing spa tips and promotions!  </span> <br />
 
             <div class="col-md-4" style="padding:0; margin:10px 0;">
 
@@ -182,7 +182,7 @@
 
                     <span class="input-group-btn">
 
-                        <button class="btn btn-default" type="button">PARTICIPATION</button>
+                        <button class="btn btn-default" type="button">JOIN</button>
 
                     </span>
 
@@ -210,11 +210,11 @@
 
                         <ul class="list-triangle ">
 
-                            <li><a href="<?php echo base_url('/about');?>">About Thebooking.vn</a></li>
+                            <li><a href="<?php echo base_url('/about');?>">About Us</a></li>
 
-                            <li><a href="<?php echo base_url('/contact');?>">Contact</a></li>
+                            <li><a href="<?php echo base_url('/contact');?>">Help/ Contact Us</a></li>
 
-                            <li><a href="<?php echo base_url('/hiring');?>">For Partners</a></li>
+                            <li><a href="<?php echo base_url('/hiring');?>">Spa&Salon Partners</a></li>
 
                             <li><a href="<?php echo base_url('/term');?>">For members</a></li>
 
@@ -230,15 +230,15 @@
 
                         <ul class="list-triangle" >
 
-                            <li><a href="<?php echo base_url('/tuyendung');?>">Recruitment</a></li>
+                            <li><a href="<?php echo base_url('/tuyendung');?>">We Are Hiring</a></li>
 
                             <li><a href="<?php echo base_url('/dieukhoan');?>">Operation Regulation</a></li>
 
-                            <li><a href="<?php echo base_url('/chinhsach');?>">Conditions & Terms</a></li>
+                            <li><a href="<?php echo base_url('/chinhsach');?>">Terms of  Use</a></li>
 
                             <li><a href="<?php echo base_url('/baomat');?>">Privacy Policy</a></li>
 
-                            <li><a href="<?php echo base_url('/cauhoi');?>">FAQ</a></li>
+                            <li><a href="<?php echo base_url('/cauhoi');?>">FAQs</a></li>
 
                         </ul>
 

@@ -4,7 +4,7 @@
                 <div class="col-md-3 col-md-offset-9">
                     <div class="input-group search-box">
                     <form id="form1" name="form1" method="post" action="">
-                      <input type="text" class="form-control" name="txtsearchhead" id="txtsearchhead" placeholder="Search" <?php if(isset($_SESSION['indexsearch']) && isset($_SESSION['indexsearch']['searchspaname'])) echo 'value="'.$_SESSION['indexsearch']['searchspaname'].'"'; ?>>
+                      <input type="text" class="form-control" name="txtsearchhead" id="txtsearchhead" placeholder="What are you looking for" <?php if(isset($_SESSION['indexsearch']) && isset($_SESSION['indexsearch']['searchspaname'])) echo 'value="'.$_SESSION['indexsearch']['searchspaname'].'"'; ?>>
                       <span class="input-group-btn">
                         <?php 
                             $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";

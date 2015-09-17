@@ -174,7 +174,7 @@
                     ?>
                         <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-striped" id="tblbutton_resproduct">
                             <td colspan="3" align="left" style="font-size:18px;" >
-                                You did booking spa <span id="totalspa"><?php echo count($list_info_session); ?></span> Spa
+                                You did booking <span id="totalspa"><?php echo count($list_info_session); ?></span> Spa
                                 <span id="totalspasession" style="display: none;"><?php echo count($list_info_session); ?></span>
                             </td>
                             <td colspan="5" align="right"><span style="font-size:17px;"><strong>Total amount:</strong></span></td>

@@ -62,7 +62,8 @@ class Index extends CI_Controller
             // get sản phẩm patpect
             $res['listproPromo'] = $this->m_index->laylist_kmpacket();
             //echo "<pre>";
-//            print_r($res['listproPromo']);
+           // print_r($res['listproPromo']);
+           // return;
             
             //cookie dang nhap
             if(isset($_COOKIE["cookieuser"]) && $_COOKIE["cookieuser"]!="")
